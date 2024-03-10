@@ -124,7 +124,7 @@ private:
 						  calldata_t *data); // Direct callback
 	static void HandleInputAudioMonitorTypeChanged(void *param,
 						       calldata_t *data); // Direct callback
-	void HandleInputVolumeMeters(std::vector<json> inputs); // AudioMeter::Handler callback
+	void HandleInputVolumeMeters(std::vector<json> inputs);           // AudioMeter::Handler callback
 
 	// Transitions
 	void HandleCurrentSceneTransitionChanged();
@@ -146,7 +146,7 @@ private:
 	void HandleSourceFilterCreated(obs_source_t *source, obs_source_t *filter);
 	void HandleSourceFilterRemoved(obs_source_t *source, obs_source_t *filter);
 	static void HandleSourceFilterNameChanged(void *param,
-						  calldata_t *data);                     // Direct callback
+						  calldata_t *data); // Direct callback
 	void HandleSourceFilterSettingsChanged(obs_source_t *source);
 	static void HandleSourceFilterEnableStateChanged(void *param, calldata_t *data); // Direct callback
 
